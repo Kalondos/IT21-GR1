@@ -6,6 +6,26 @@ ULESANNE 04
 '''
 
 '''
+Ruutude ja kuupide tabel
+Programm leiab ja väljastama ruudud ja kuubid arvudele 1..10.
+Vorminda tabel tulpades.
+Arv Ruut Kuup
+1   1    1
+2   4    8
+3   9    27
+4   16   64
+jne
+'''
+for i in range(1,11):
+    print(f"{i:5} {i**2:5} {i**3:5}")
+
+
+
+
+
+
+
+'''
 Pank
 Kasutaja soovib panka panna raha teatud aastateks.
 Panga intress on 5% summast. Leia kui palju ta summa iga aasta kasvab.
@@ -104,10 +124,11 @@ print("---------------------------------------------------------------------")
 Paaris ja paaritu
 Loo tsükkel, mis genereerib arvud 1-100 koos vastava tekstiga, kas arv on paaris või paaritu
 '''
-for c in range(1, 100):
-    if c==5:
-        break
-    print(c, end='')
+for i in range(1,11):
+    if i%2==0:
+        print(i, "paaris")
+    else:
+        print(i, "paaritu")
 
 
 
@@ -240,3 +261,4 @@ else:
     
     
     
+
