@@ -1,10 +1,49 @@
 '''
 Карл Эерик Kвартира
 ULESANNE 05
-03Карл Эерик Kвартира
-ULESANNE 04
 10.02.2022
 '''
+
+
+'''
+Tärnid
+Kasuta loendis olevate arvude väärtusi ning loo tärnide abil lintdiagramm.
+Näiteks:
+******************
+*******************
+********************************
+*****************************************
+****************************************************
+************
+'''
+import plotly.express as px
+import numpy
+ 
+# creating random data through randomint
+# function of numpy.random
+np.random.seed(42)
+   
+random_x= np.random.randint(1, 101, 100)
+random_y= np.random.randint(1, 101, 100)
+ 
+fig = px.bar(random_x, y = random_y)
+fig.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 '''
 Vanused
