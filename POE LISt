@@ -1,0 +1,34 @@
+#######################
+# Karl Eerik Kotter
+# 03.06.2022
+# Shopping list
+######################
+
+
+
+#plist hakkab koguma tooteid
+plist = []
+print("-------------------------------------------")
+print("Sisestage toode mida soovite lisada listi.")
+print("-------------------------------------------")
+print('L6petamiseks vajutage "ENTER"')
+print("-------------------------------------------")
+
+while True:
+#Isik sisestab toote
+    toode = input("")
+
+#Kui ei sisestata mitte midagi, l6ppeb see pull 2ra
+    if toode == '':
+        break
+#lisab tooteid listi juurde
+    plist.append(toode)
+
+#v2ljastab kogu sisestuse
+print("Lisasite listi:")
+for toode in plist:
+    print(toode)
+
+
+
+
