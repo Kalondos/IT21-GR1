@@ -10,9 +10,8 @@ from tkinter import *
 aken = Tk()
 aken.title("Tere tere, vanakere!")
 aken.geometry("400x150")
-aken.pack(fill="both", expand=True)
-#kasti kiri
-lorem = 'Nimi: Karlos Eriko Kotr'
+#nimed
+lorem = 'Nimi: Karlos Eriko'
 lorem2 = 'Rühm: IT-21'
 lorem3 = '2022'
 #värvid
