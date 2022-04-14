@@ -1,0 +1,60 @@
+import random
+
+
+#karakteri statid
+characterHealth = 100
+characterPunch = random.randint(0,20)
+#vanapagana statid
+enemyHealth = 100
+enemyPunch = random.randint(0,20)
+#karu statid
+bearPunch = random.randint(3,9)
+#skoor
+#sen see kui vahele jääd pedofiilsusega 
+unexpected_gameScore = -100
+score = 0
+
+
+
+#m2ngu alustamine
+gameChoice = int(input("\nAlusta mänguga\n[1] -- Davs\n[2] -- mkm tp - tao pihku\n"))
+if gameChoice == 1:
+    print("\nAlustasite mänguga\n")
+elif gameChoice == 2:
+    print("\nLahkusite\n")
+    exit()
+else:
+    print("vale vahemik")
+
+print("Sündisite Leigrina iiumaal.\nNäete kusagil kaugel Palumäel vanapaganat lapsi käperdamas")
+gameChoice = int(input("Mida te teha soovite Leiger?:\n[1] -- Anna jalaga\n[2] -- Liitu temaga\n"))
+if gameChoice == 1:
+    if characterPunch > 3:
+        #löögi hittimise puhul saad 10 skoori pointi
+        score = 0 + 10
+        enemyHealth = enemyHealth - characterPunch
+        print("Andsite talle jalaga, mis tekitas talle",characterPunch,"dämmi\nMeie pedofiilil on alles",enemyHealth,"Hp")
+        print("Saite löögi pihta panemisega",score,"punkti")
+        print("\nKahjuks vanapagan pani jooksu. \nHint: tan metsas puu taga\n")
+
+else:
+    print("\nLiitusite vanapaganaga, kuid jäite politseile vahele, kes sattus teile kogematta peale.\n")
+    print("\nKaotasite Mängu!\nSkoor:",unexpected_gameScore,"\nTeil on abi vaja\nUuesti alustamiseks käivitage mäng\n")
+    exit()
+
+gameChoice = int(input("Te mõtlesite teda otsima minna ning teile jäi silma 2 teekonda kust minna\n[1] -- Minge küsige kaas liiklejatelt, kas nad on näinud juhuslikult vanapagamat.\n[2] -- Minge mööda lambist matkarada\n"))
+if gameChoice == 1:
+    print("\nLeidsite paar venda Kärdlast, kuigi te ei saanud talt infi\n")
+elif gameChoice == 2:
+    print("\nKõndisite paar KM metsarajal ning leidsite kummalised jalajäljed\n")
+    print("\nTe hakkasite uurima neid, ning tuli välja, et see oli karu oma, kes pesitseb lähedal.\n")
+    print("\npaarkümmend sammu edasi liikudes märkas ta teid.\n Ta tuli teile kallale ja saite talt 12 dämmi\n")
+    characterHealth = characterHealth - bearPunch
+    print("\nTeil on",characterHealth,"elu alles.\n")
+    print("Kaotasite löögi tagajärjel 4 skoori punkti")
+    score = 10 - 4
+    print("Teil on alles",score,"skoori punkti\n")
+    print("Krabasite käbe maast puuoksa ning panite talle normi laksu vastu pääd\nRaisk sai surma :(\n")
+
+
+
