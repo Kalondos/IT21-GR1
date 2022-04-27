@@ -25,7 +25,7 @@ characterJump = 69
 
 
 #m2ngu alustamine
-gameChoice = int(input("\nAlusta mänguga\n[1] -- Davs\n[2] -- mkm tp - tao pihku aKa tao onni\n"))
+gameChoice = int(input("\nAlusta mänguga\n[1] -- Davs\n[2] -- Lahku mängust\n"))
 
 #alustab m2ngu
 if gameChoice == 1:
@@ -42,7 +42,7 @@ else:
     #kui on sisestatud vahemikust väline number tuleb see teade
     print("vale vahemik")
     
-print("Sündisite Leigrina iiumaal.\nNäete kusagil kaugel Palumäel vanapaganat lapsi käperdamas")
+print("Sündisite Leigrina iiumaal.\nNäete kusagil kaugel Palumäel vanapaganat vanureid peksmas")
 
 #löökide valik
 gameChoice = int(input("Mida te teha soovite Leiger?:\n[1] -- Anna jalaga\n[2] -- Liitu temaga\n"))
@@ -54,7 +54,7 @@ if gameChoice == 1:
         score = score + 10
         enemyHealth = enemyHealth - characterPunch
 
-        print("Andsite talle jalaga, mis tekitas talle",characterPunch,"dämmi\nMeie pedofiilil on alles",enemyHealth,"Hp")
+        print("Andsite talle jalaga, mis tekitas talle",characterPunch,"dämmi\nMeie märajatsejal on alles",enemyHealth,"Hp")
         print("Saite löögi pihta panemisega",score,"punkti")
         print("\nKahjuks vanapagan pani jooksu. \nHint: tan metsas puu taga\n")
 
@@ -111,7 +111,7 @@ else:
     print("vale vahemik")
 
 #löögi valik
-gameChoice = int(input("[1] - Jalaga (min 20 DMG)\n[2] - Hüppad peale talle (lebo 69 DMG)\n[3] - Pissi peale (max 30 DMG) \n"))
+gameChoice = int(input("[1] - Jalaga (min 20 DMG)\n[2] - Hüppad peale talle (lebo 69 DMG)\n[3] - Sülita näkku (max 30 DMG) \n"))
 
 if gameChoice == 1:
 
@@ -135,7 +135,7 @@ elif gameChoice == 2:
 
 elif gameChoice == 3:
 
-    print("\nValisite peale pissimise")
+    print("\nValisite näkku sülitamise")
 
     enemyHealth = enemyHealth - characterPee
 
@@ -152,7 +152,7 @@ if enemyHealth >= 1:
     print('\nTeil tekkis uus võimalus talle lõuksi külvata, aga ta palus teil ennem külvamist luuletus läbi lugeda.\n\nHommik üle maja käib,\npuistab kambri päikest täis.\nKui sa ärkad, imestad\nKes mind nõnda pimestab?\nPäike palub: "Kas võin jääda?"\nSulle seltsiks kogu päeva\ntäna olema ma pean,\nsest üht saladust ma tean:\n"sul on täna sünnipäev!"\n')
     print("\nPange uuesti: ")
 
-    gameChoice = int(input("[1] - Jalaga (min 20 DMG)\n[2] - Hüppad peale talle (lebo 69 DMG)\n[3] - Pissi peale (max 30 DMG) \n"))
+    gameChoice = int(input("[1] - Jalaga (min 20 DMG)\n[2] - Hüppad peale talle (lebo 69 DMG)\n[3] - Sülita näkku (max 30 DMG) \n"))
     
     if gameChoice == 1:
 
@@ -176,7 +176,7 @@ if enemyHealth >= 1:
 
     elif gameChoice == 3:
 
-        print("\nValisite peale pissimise\n")
+        print("\nValisite näkku sülitamise\n")
 
         enemyHealth = enemyHealth - characterPee
 
@@ -213,3 +213,4 @@ elif enemyHealth < 0:
 
     print("Vanapeer sai surma")
     print("Võitiste mängu. Teie skoori lõpptulemus on:",score,"\n")
+    
