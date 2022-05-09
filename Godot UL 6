@@ -1,0 +1,58 @@
+# Karl Erki kotter
+# 12.04.2022
+# harjutus 6
+
+extends Node
+
+
+var vastaseElud = 100
+var salveSuurus = 5
+var skoor = 0
+var tabamisProts = 69
+var pihtas = bool(randi() % 2)
+
+
+
+
+func _ready():
+	var rnd = RandomNumberGenerator.new()
+	rnd.randomize()
+	var relvadmg = rnd.randi_range(8, 12)
+	
+	
+func _process(_delta):
+	if salveSuurus > 0:
+		
+		if Input.is_action_just_pressed("laskmine"):
+			print("Põmm Põmm")
+			salveSuurus = salveSuurus - 1
+			print("Teil on salves alles veel ", salveSuurus, " kuuli.")
+			
+		if salveSuurus == 0:
+			print("\nKlikk Klikk")
+			print("Teil sai salv tühjaks!\n")
+			
+	if salveSuurus < 5:
+		if Input.is_action_just_pressed("Reloud"):
+			print("Hakkasite salve laadima")
+			salveSuurus = salveSuurus + 1
+			print("Teil on salves ",salveSuurus," kuuli")
+			
+		if salveSuurus == 5:
+			print("\nTeil sai salv täis!\n")
+	
+	#Koletise osa
+	if vastaseElud > 0:
+		var relvadmg = 
+		
+	if vastaseElud == 0:
+		print("Saite koletisest jagu!")
+			
+
+		
+		
+		
+		
+		
+	
+	
